@@ -53,7 +53,7 @@ namespace Team_3_Hunt_The_Wumpus
         private void Form1_Load(object sender, EventArgs e)
         {
             MyCave = new Cave();
-            MyGameLocation = new GameLocation();
+            MyGameLocation = new GameLocation(MyCave);
 
             TypeWriterEffect("Hunt the Wumpus", label1, 50);
             adjRooms = MyCave.GetAdjacentRooms(MyGameLocation.PlayerLocation);
